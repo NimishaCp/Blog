@@ -102,6 +102,7 @@ app.delete("/blogs/:id", function(req, res){
   })
 });
 
-app.listen(3001,function() {
+const PORT=process.env.PORT
+app.listen(PORT,function() {
  console.log("Server Listening on port 3001");
 })
